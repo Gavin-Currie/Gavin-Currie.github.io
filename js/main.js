@@ -8,8 +8,8 @@ So, when the page loads, it gets the page 'home.html' and loads it into a div wi
 When the  href is clicked, it gets the page 'page.html' and loads it into a div with the id of 'main' */
         $(function () {  
         $("#home").click(function () {  
-            $("#main").load("home.html");  
-        });  
+            $("#main").load("home.html"); 
+           });  
     });
 
         $(function () {  
