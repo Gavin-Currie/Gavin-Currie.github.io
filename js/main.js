@@ -31,6 +31,12 @@ When the  href is clicked, it gets the page 'page.html' and loads it into a div 
     });
 
     $(function () {  
+        $("#ei").click(function () {  
+            $("#main").load("/blog/emotional-intelligence.html");  
+        });  
+    });
+
+    $(function () {  
         $("#ghub").click(function () {  
             $("#main").load("/blog/git-github.html");  
         });  
@@ -39,6 +45,12 @@ When the  href is clicked, it gets the page 'page.html' and loads it into a div 
     $(function () {  
         $("#hcss").click(function () {  
             $("#main").load("/blog/html-css.html");  
+        });  
+    });
+
+    $(function () {  
+        $("#js").click(function () {  
+            $("#main").load("/blog/javascript.html");  
         });  
     });
 
