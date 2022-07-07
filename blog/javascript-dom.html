@@ -1,0 +1,84 @@
+
+<head>
+    <title>| JavaScript and the DOM</title>
+</head>
+<body>
+    <br>
+    <h3>JavaScript and the DOM</h3>
+    <div class="space">
+        <br><h5>JavaScript</h5>
+        JavaScript: The engine behind HTML. The scripting language which give your pages more functionality.
+        <br>Usually seen in the <code> < script > </script></code> section of your page, or as a link to a seperate file in it's own folder, like this:
+        <br><code> < script src="/js/main.js" > </code> 
+        <br>Now, this Javascript can hold various information about your elements within the web page.
+        <br>Oh, another thing: Javascript has a reputation for being finnicky with text, so make sure your functions or variables are written in camel case; like this: <b>firstSecondThirdword</b> 
+        <br>
+        <br><h6>Under the hood:</h6>
+        <br>To have a better idea of how Javascript can manage your content, we need to look into the inspection console. 
+        <br>This is a portal to the various manangement controls and navigation of the structure of your pages.
+        <br>
+        <br>To do this, on your web page your veiwing, right click on the page, then click: inspect.
+        <br><img src="/img/html-inspect.png">
+        <br>
+        <br>This will bring up an inspection panel to the right of your browser.
+        <br><img src="/img/inspect-console.png">
+        <br>
+        <br>When you are testing web pages with Javascript, including the line: console.(log) as a test output, is a good habit to adopt.
+        <br>
+        <br><b>Components:</b> 
+        <br>Javascript contains various components with which to operate and manage your data used within your content, such as:
+        <br>
+        <br><ul>
+            <li><b>Comments:</b>Notes used to explain what blocks of code do, it's unseen by the program, and dosent affect the actual code. Written as: <code> // your message... </code></li>
+            <li><b>Variables:</b>The basic building blocks of Javascript code. Written as: <code> let welcome = 'Hello world' </code></li>
+            <li><b>Functions:</b>Reusable blocks of code that run the program to improve efficiency. Written as: <code> function addTwoNumbers(x, y) {
+                return x + y;
+         } </code> </li>
+         <li><b>Conditionals:</b>For A/B, true/false testing. Written as: <code>if ("cat" === "dog") {
+            var outcome = "if block";
+      } else {
+            var outcome = "else block";
+      }
+      outcome;</code></li>
+      <li><b>Arrays:</b>Used for handling multiple values. Written as: <code>var breakfast = ["coffee", "croissant"];</code></li>
+        <li><b>Objects:</b>Adding an extra dimension to values by giving them properties. Written as key/value pairs. Like this: <code>const car = {type:"Fiat", model:"500", color:"white"};</code></li>
+        </ul>
+        <br>
+        <br><h5>The DOM</h5>
+        When they mention The DOM, it refers to the <b>D</b>ocument <b>O</b>bject <b>M</b>odel.
+        <br>This how Javascript interacts with your web page.
+        <br>
+        <br><b>Document:</b> refers to Javascript handling the Web page as an HTML document.
+        <br><b>Object:</b> Javascript handles the HTML tags as objects and how the document heirarchy is structured like a 'tree'.
+        (See my HTML page) With each nested element, Javascript treats as a child object or branches within that parent object.
+        <br><b>Model:</b> This is displayed as a representation of that JavaScript object. This includes:
+        <ul>
+            <li>The interfaces and objects used to represent and manipulate a document</li>
+            <li>The semantics of these interfaces and objects - including both behavior and attributes</li>
+            <li>The relationships and collaborations among these interfaces and objects</li>
+        </ul> 
+        <br><img src="/img/html-dom.png">
+        
+        <br>
+        <br><h6>Interactivity</h6>
+        This where the DOM starts to show it's usefulness.
+        <br>
+        <br>For example: you can have elements assigned with a call (references to) to a function residing in a JavaScript file.
+        <br>Like this:<code>< button onlick="addNum()">< button /></code> this points to the function within JavaScript.
+        <br>example: <code> function addNum() { run the function.. }</code>
+        <br>
+        <br><h6>Showing results:</h6>
+        To take it up a notch, we can display the results of this interactivity as content on the page.
+        <br>For example: say we have an H2 tag with an id of: addOne <code> < h2 id="addOne"> < h2/> </code>
+        <br>Then, in the JavaScript, we add a variable that references that id.
+        <br>like this: <code> let addNum = document.getElementById("addOne") </code>
+        <br>Then in the function 'addNum', we include the variable from the H2 tag. like this: <code> addNum.innerText = "two" </code> 
+        <br>What this does, is the JavaScript targets that particular tag with that id and displays on the page (the .innerText part) within the H2 tag as: "two" (or whatever other variable you want displayed.)
+        <br>Boy, I hope this makes sense...
+        <br>You can also manipulate other elements and their properites, like: by class, by element type, by tag name, by URL, links, event listeners, forms, active links, whether a button is clicked etc...wow.
+        <br>
+        <br>
+        <br>
+    </div>
+
+</body>
