@@ -50,7 +50,7 @@ When the  href is clicked, it gets the page 'page.html' and loads it into a div 
 
     $(function () {  
         $("#js").click(function () {  
-            $("#main").load("/blog/javascript.html");  
+            $("#main").load("/blog/javascript-dom.html");  
         });  
     });
 
