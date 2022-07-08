@@ -11,6 +11,7 @@
         <br>Usually seen in the <code> < script > </script></code> section of your page, or as a link to a seperate file in it's own folder, like this:
         <br><code> < script src="/js/main.js" > </code> 
         <br>Now, this Javascript can hold various information about your elements within the web page.
+        <br>Javascipt reads the commands from top to bottom (like us).
         <br>Oh, another thing: Javascript has a reputation for being finnicky with text, so make sure your functions or variables are written in camel case; like this: <b>firstSecondThirdword</b> 
         <br>
         <br><h6>Under the hood:</h6>
@@ -38,7 +39,7 @@
             <li><b>Functions:</b>Reusable blocks of code that run the program to improve efficiency. 
                <br>Written as: 
                <br><img src="/img/js-function.png"></li>
-            <li><b>Conditionals:</b>For A/B, true/false testing. 
+            <li><b>Conditionals:</b>The testing mechanism where you want to check if variables or values equate, or meet certain criteria. 
                 <br>Written as: 
                 <br><img src="/img/js-conditional.png"></li>
             <li><b>Arrays:</b>Used for handling multiple values. 
@@ -83,16 +84,19 @@
         <br>Also an H2 tag where the increment result is displayed, and the paragraph tag where the saved counts are displayed.
         <br><img src="/img/js-function-tag.png">
         <br>
-        <br>Then in the Javascript it all comes together.
+        <br>Then in the Javascript, it all comes together.
         <br><img src="/img/js-function-js.png">
-        <br>What this does is, it starts the counter at zero in the H2 tag, when the increment button is clicked, the script tells the increment function to start counting.
-        <br>and assigns the variable for this as <b>countEL.</b> which references the HTML <b>document</b>, runs the method that targets the tag within the document by id (<b>.getElementById</b>)
-        <br>yep, the H2 tag with the id of <b>("count-el")</b> is what is being targeted. It then spits out the result ( <b>.innerText</b> ) back into the H2 tag with the new variable <b>count</b>.
+        <br>What this does is, it starts the counter at zero in the H2 tag. Every time the increment button is clicked, the script tells the increment function to increase the count by one.
+        <br>It first assigns the variable for this as <b>countEL.</b> which references the HTML <b>document</b>, runs the method that targets the tag within the document by id (<b>.getElementById</b>)
+        <br>yep, the H2 tag with the id of <b>("count-el")</b> is what is being targeted. It increases the count by one (<b>count +=1</b>), then spits out the result (the <b>.innerText</b> part is where javascript puts the code into HTML ) 
+        <br>back into the H2 tag with the new variable <b>count</b>.
         <br>
         <br>The save button does the same, but in the save function, it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)
         <br>with the variable <b>countStr</b> that saves the total of the variable <b>count</b> seperated with a space, spits the <b>countStr</b> variable into <b>.textContext</b> (the paragraph tag)
-        <br>It then resets the <b>count</b> variable back to zero.
+        <br>It then resets the program, and the <b>count</b> variable back to zero.
         <br>
+        <br>So, with a bit of CSS styling, hopefully your page will look something like this:
+        <br><img src="/img/js-app.png">
         <br>Boy, I hope this makes sense... 
         <br>You can also manipulate other elements and their properites, like: by class, by element type, by tag name, by URL, links, event listeners, forms, active links, whether a button is clicked etc...wow.
         <br>
