@@ -29,19 +29,24 @@
         <br>Javascript contains various components with which to operate and manage your data used within your content, such as:
         <br>
         <br><ul>
-            <li><b>Comments:</b>Notes used to explain what blocks of code do, it's unseen by the program, and dosent affect the actual code. Written as: <code> // your message... </code></li>
-            <li><b>Variables:</b>The basic building blocks of Javascript code. Written as: <code> let welcome = 'Hello world' </code></li>
-            <li><b>Functions:</b>Reusable blocks of code that run the program to improve efficiency. Written as: <code> function addTwoNumbers(x, y) {
-                return x + y;
-         } </code> </li>
-         <li><b>Conditionals:</b>For A/B, true/false testing. Written as: <code>if ("cat" === "dog") {
-            var outcome = "if block";
-      } else {
-            var outcome = "else block";
-      }
-      outcome;</code></li>
-      <li><b>Arrays:</b>Used for handling multiple values. Written as: <code>var breakfast = ["coffee", "croissant"];</code></li>
-        <li><b>Objects:</b>Adding an extra dimension to values by giving them properties. Written as key/value pairs. Like this: <code>const car = {type:"Fiat", model:"500", color:"white"};</code></li>
+            <li><b>Comments:</b>Notes used to explain what blocks of code do, it's unseen by the program, and dosent affect the actual code. 
+                <br>Written as: 
+                <br><img src="/img/js-comment.png"></li>
+            <li><b>Variables:</b>The basic building blocks of Javascript code. 
+               <br>Written as: 
+               <br><img src="/img/js-variable.png"></li>
+            <li><b>Functions:</b>Reusable blocks of code that run the program to improve efficiency. 
+               <br>Written as: 
+               <br><img src="/img/js-function.png"></li>
+            <li><b>Conditionals:</b>For A/B, true/false testing. 
+                <br>Written as: 
+                <br><img src="/img/js-conditional.png"></li>
+            <li><b>Arrays:</b>Used for handling multiple values. 
+                <br>Written as:
+                <br><img src="/img/js-array.png"></li>
+            <li><b>Objects:</b>Adding an extra dimension to values by giving them properties. 
+                <br> Written as key/value pairs. Like this: 
+                <br><img src="/img/js-object.png"></li>
         </ul>
         <br>
         <br><h5>The DOM</h5>
@@ -64,17 +69,31 @@
         This where the DOM starts to show it's usefulness.
         <br>
         <br>For example: you can have elements assigned with a call (references to) to a function residing in a JavaScript file.
-        <br>Like this:<code>< button onlick="addNum()">< button /></code> this points to the function within JavaScript.
-        <br>example: <code> function addNum() { run the function.. }</code>
+        <br>Like this:
+        <br><img src="/img/js-button.png">
+        <br>The <b>onClick</b> is a event handler which listens for a mouse click - when clicked, calls the function <b>clickMe()</b>
+        <br><img src="/img/js-buttonFunction.png">
+        <br>Event handlers also include: onChange, onMouseover, onMouseout, onKeydown, onLoad
         <br>
         <br><h6>Showing results:</h6>
         To take it up a notch, we can display the results of this interactivity as content on the page.
-        <br>For example: say we have an H2 tag with an id of: addOne <code> < h2 id="addOne"> < h2/> </code>
-        <br>Then, in the JavaScript, we add a variable that references that id.
-        <br>like this: <code> let addNum = document.getElementById("addOne") </code>
-        <br>Then in the function 'addNum', we include the variable from the H2 tag. like this: <code> addNum.innerText = "two" </code> 
-        <br>What this does, is the JavaScript targets that particular tag with that id and displays on the page (the .innerText part) within the H2 tag as: "two" (or whatever other variable you want displayed.)
-        <br>Boy, I hope this makes sense...
+        <br>For example: say we have a button with an id of "increment-btn" and a button with an id of "save-btn"
+        <br><img src="/img/js-function-btn.png">
+        <br>
+        <br>Also an H2 tag where the increment result is displayed, and the paragraph tag where the saved counts are displayed.
+        <br><img src="/img/js-function-tag.png">
+        <br>
+        <br>Then in the Javascript it all comes together.
+        <br><img src="/img/js-function-js.png">
+        <br>What this does is, it starts the counter at zero in the H2 tag, when the increment button is clicked, the script tells the increment function to start counting.
+        <br>and assigns the variable for this as <b>countEL.</b> which references the HTML <b>document</b>, runs the method that targets the tag within the document by id (<b>.getElementById</b>)
+        <br>yep, the H2 tag with the id of <b>("count-el")</b> is what is being targeted. It then spits out the result ( <b>.innerText</b> ) back into the H2 tag with the new variable <b>count</b>.
+        <br>
+        <br>The save button does the same, but in the save function, it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)
+        <br>with the variable <b>countStr</b> that saves the total of the variable <b>count</b> seperated with a space, spits the <b>countStr</b> variable into <b>.textContext</b> (the paragraph tag)
+        <br>It then resets the <b>count</b> variable back to zero.
+        <br>
+        <br>Boy, I hope this makes sense... 
         <br>You can also manipulate other elements and their properites, like: by class, by element type, by tag name, by URL, links, event listeners, forms, active links, whether a button is clicked etc...wow.
         <br>
         <br>
