@@ -95,24 +95,33 @@
         <br>
         <br><h6>Showing results:</h6>
         To take it up a notch, we can display the results of this interactivity as content on the page.
-        <br>For example: say we have a button with an id of "increment-btn" and a button with an id of "save-btn"
-        <br><img src="/img/js-function-btn.png">
-        <br>
-        <br>Also an H2 tag where the increment result is displayed, and the paragraph tag where the saved counts are displayed.
+        <br>For example - say we have:
+        <ul>
+            <li>A button with an id of "increment-btn" </li>
+            <li>A button with an id of "save-btn"</li>
+            <li>An H2 tag where the increment result is displayed</li>
+            <li>And the paragraph tag where the saved counts are displayed</li>
+        </ul>
+        <img src="/img/js-function-btn.png">
         <br><img src="/img/js-function-tag.png">
         <br>
         <br>Then in the Javascript, it all comes together.
         <br><img src="/img/js-function-js.png">
-        <br>What this does is, it starts the counter at zero in the H2 tag. Every time the increment button is clicked, the script tells the increment function to increase the count by one.
-        <br>It first assigns the variable for this as <b>countEL.</b> which references the HTML <b>document</b>, runs the method that targets the tag within the document by id (<b>.getElementById</b>)
-        <br>yep, the H2 tag with the id of <b>("count-el")</b> is what is being targeted. 
-        <br>Then in the increment function, it increases the count by one (<b>count +=1</b>), then spits out the result (the <b>.innerText</b> part is where javascript puts the code into HTML ) 
-        <br>back into the H2 tag with the new variable <b>count</b>.
-        <br>
-        <br>The save button does the same, but in the save function, it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)
-        <br>with the variable <b>countStr</b> that saves the current total of the variable <b>count</b> seperated with a space, spits the count total (<b>countStr</b>) variable into <b>.textContent</b> (the paragraph tag)
-        <br>It then resets the program, and the <b>count</b> variable back to zero, while still retaining the previous count total.
-        <br>
+        <br>What this does is, every time the increment button is clicked, the script tells the increment function to increase the count by one.
+        <ul>
+            <li>It assigns a <b>count</b> variable and sets it to zero</li>
+            <li>It then assigns a variable <b>countEL.</b> which references the HTML <b>document</b>, 
+               <br>runs the method that targets the tag within the document by id (<b>.getElementById</b>) - yep, the H2  tag with the id of <b>("count-el")</b> is what is being targeted.</li>
+            <li>Then in the increment function, it increases the count by one (<b>count +=1</b>), then spits out the result 
+                <br> (the <b>.innerText</b> part is where javascript puts the code into HTML ) back into the H2 tag with the new variable <b>count</b>.
+            </li>
+            <li>The save button does something similar: it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)</li>
+            <li>Then in the save function, with the variable <b>countStr</b> that saves the current total of the variable <b>count</b>, adds the " - ",
+               <br>Then inputs the (<b>countStr</b>) variable into <b>.textContent</b> (the paragraph tag) 
+            </li>
+            <li>It then resets the program, and the <b>count</b> variable back to zero, while still retaining the saved count total.</li>
+        </ul> 
+
         <br>So, with a bit of CSS styling, hopefully your page will look something like this:
         <br><img src="/img/js-app.png">
         <br>Boy, I hope this makes sense... 
