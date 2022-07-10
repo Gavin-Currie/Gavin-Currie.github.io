@@ -25,6 +25,10 @@
         <br><img src="/img/inspect-console.png">
         <br>
         <br>When you are testing web pages with Javascript, including the line: console.log() as a test output, is a good habit to adopt.
+        <br>For example - If you wanted to test output the value to a variable to the console, you would type something like this:
+        <br>(where the variable value is the parameter inside the () )
+        <br><img src="/img/js-console.png">
+        <br>You can also do this for functions, conditionals, arrays, loops and objects.
         <br>
         <br><b>Components:</b> 
         <br>Javascript contains various components with which to operate and manage your data used within your content, such as:
@@ -45,6 +49,9 @@
             <li><b>Arrays:</b>Used for handling multiple values. 
                 <br>Written as:
                 <br><img src="/img/js-array.png"></li>
+            <li><b>Loops:</b>Used for repeating an incrementing value until a certain criteria is met.
+                <br>Written as:
+                <br><img src="/img/js-loop.png"></li>
             <li><b>Objects:</b>Adding an extra dimension to values by giving them properties. 
                 <br> Written as key/value pairs. Like this: 
                 <br><img src="/img/js-object.png"></li>
@@ -88,12 +95,13 @@
         <br><img src="/img/js-function-js.png">
         <br>What this does is, it starts the counter at zero in the H2 tag. Every time the increment button is clicked, the script tells the increment function to increase the count by one.
         <br>It first assigns the variable for this as <b>countEL.</b> which references the HTML <b>document</b>, runs the method that targets the tag within the document by id (<b>.getElementById</b>)
-        <br>yep, the H2 tag with the id of <b>("count-el")</b> is what is being targeted. It increases the count by one (<b>count +=1</b>), then spits out the result (the <b>.innerText</b> part is where javascript puts the code into HTML ) 
+        <br>yep, the H2 tag with the id of <b>("count-el")</b> is what is being targeted. 
+        <br>Then in the increment function, it increases the count by one (<b>count +=1</b>), then spits out the result (the <b>.innerText</b> part is where javascript puts the code into HTML ) 
         <br>back into the H2 tag with the new variable <b>count</b>.
         <br>
         <br>The save button does the same, but in the save function, it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)
-        <br>with the variable <b>countStr</b> that saves the total of the variable <b>count</b> seperated with a space, spits the <b>countStr</b> variable into <b>.textContext</b> (the paragraph tag)
-        <br>It then resets the program, and the <b>count</b> variable back to zero.
+        <br>with the variable <b>countStr</b> that saves the current total of the variable <b>count</b> seperated with a space, spits the count total (<b>countStr</b>) variable into <b>.textContext</b> (the paragraph tag)
+        <br>It then resets the program, and the <b>count</b> variable back to zero, while still retaining the previous count total.
         <br>
         <br>So, with a bit of CSS styling, hopefully your page will look something like this:
         <br><img src="/img/js-app.png">
