@@ -35,6 +35,12 @@ $(function () {
 });
 
 $(function () {  
+    $("#np").click(function () {  
+        $("#main").load("/blog/neuroplasticity.html");  
+    });  
+});
+
+$(function () {  
     $("#ghub").click(function () {  
         $("#main").load("/blog/git-github.html");  
     });  
