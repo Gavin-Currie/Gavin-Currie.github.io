@@ -6,129 +6,187 @@
     <br>
     <h3>JavaScript and the DOM</h3>
     <div class="space">
-        <br><h5>JavaScript</h5>
-        JavaScript: The engine behind HTML. The scripting language which give your pages more functionality.
-        <br>Usually seen in the <code> < script > </script></code> section of your page, or as a link to a seperate file in it's own folder, like this:
-        <br><code> < script src="/js/main.js" > </code> 
-        <br>Now, this Javascript can hold various information about your elements within the web page.
-        <br>Javascipt reads the commands from top to bottom (like us).
-        <br>Oh, another thing: Javascript has a reputation for being finnicky with text, so make sure your functions or variables are written in camel case; like this: <b>firstSecondThirdword</b> 
-        <br>
-        <br><h6>Under the hood:</h6>
-        <br>To have a better idea of how Javascript can manage your content, we need to look into the inspection console. 
-        <br>This is a portal to the various manangement controls and navigation of the structure of your pages.
-        <br>
-        <br>To do this, on your web page your veiwing, right click on the page, then click: inspect.
-        <br><img src="/img/html-inspect.png">
-        <br>
-        <br>This will bring up an inspection panel to the right of your browser.
-        <br><img src="/img/inspect-console.png">
-        <br>
-        <br>When you are testing web pages with Javascript, including the line: console.log() as a test output, is a good habit to adopt.
-        <br>For example - If you wanted to test output the value of a variable to the console, you would type something like this:
-        <br>(where the variable value outputs as the parameter inside the ( ) )
-        <br><img src="/img/js-console.png">
-        <br>You can also do this with functions, conditionals, arrays, loops and objects.
-        <br>
-        <br><b>Components:</b> 
-        <br>Javascript contains various components with which to operate and manage your data used within your content, such as:
-        <br>
-        <br><ul>
-            <li><b>Comments:</b>Notes used to explain what blocks of code do, it's unseen by the program, and dosent affect the actual code. 
-                <br>Written as: 
-                <br><img src="/img/js-comment.png"></li>
+        <h5>JavaScript</h5>
+        <p>
+            JavaScript: The engine behind HTML. The scripting language which give your pages more functionality.
+            <br>Usually seen in the <code> < script > </script></code> section of your page, or as a link to a seperate file in it's own folder, like this:
+            <br><code> < script src="/js/main.js" > </code>
+        </p>
+        <p>
+            Now, this Javascript can hold various information about your elements within the web page.
+            <br>Javascipt reads the commands from top to bottom (like us).
+            <br>Oh, another thing: Javascript has a reputation for being finnicky with text, so make sure your functions or variables are written in camel case; like this: <b>firstSecondThirdword</b> 
+        </p>
+        
+        <h6>Under the hood:</h6>
+        To have a better idea of how Javascript can manage your content, we need to look into the inspection console. 
+        <p>
+            This is a portal to the various manangement controls and navigation of the structure of your pages.
+           <br>To do this, on your web page your veiwing, right click on the page, then click: inspect.
+            <br><img src="/img/html-inspect.png">
+        </p> 
+        <p>
+            This will bring up an inspection panel to the right of your browser.
+            <br><img src="/img/inspect-console.png">
+        </p>
+        <p>
+            When you are testing web pages with Javascript, including the line: console.log() as a test output, is a good habit to adopt.
+            <br>For example - If you wanted to test output the value of a variable to the console, you would type something like this:
+            <br>(where the variable passes the value as the parameter inside the ( ) )
+            <br><img src="/img/js-console.png">
+            <br>You can also perform console.log() methods with functions, conditionals, arrays, loops and objects.
+        </p>
+        <p>
+            <b>Components:</b>
+            <br>Javascript contains various components with which to operate and manage your data used within your content, such as:
+        </p>
+        
+         <ul>
+            <li><b>Comments:</b>Notes used to explain what blocks of code (will) do, it's unseen by the program, and dosent affect the actual code. 
+                <p>Written as: 
+                    <br><img src="/img/js-comment.png">
+                </p> 
+            </li>
                 <br>
-            <li><b>Variables:</b>The basic building blocks of Javascript code. The retainers of data (their values). Value data types include: strings ("hello"), numbers (45), floats (5.67), booleans (true/false).
-               <br>Written as: 
-               <br><img src="/img/js-variable.png"></li>
-               <br>
-            <li><b>Functions:</b>Reusable blocks of code that run the program to improve efficiency. 
-               <br>Written as: 
-               <br><img src="/img/js-function.png"></li>
+            <li><b>Variables:</b>The basic building blocks of Javascript code. They store information about the variable (as values). Value data types include: strings ("hello"), numbers (45), floats (5.67), booleans (true/false).
+               <p>
+                    Written as:
+                    <br><img src="/img/js-variable.png">
+               </p>  
+            </li>
+            <li><p>
+                    <b>Const:</b>A keyword to define a new variable. It stays fixed, and cannot be reassigned like variables can. Think of it as a 'read only' reference to a variable.
+                </p>
+             </li>
+              
+            <li><b>Functions:</b>Reusable blocks of code that contain a set of statements that performs a task, or calculates a value. The main engine of programs takes an input from a variable or array etc, processes the information and returns an output.
+                <br>Functions can also contain loops, and return the results from arrays that are outside the function. Functions can also be called from outsidse the function. 
+               <p>
+                    Written as:
+                    <br><img src="/img/js-function.png">
+                    
+                </p> 
+            </li>
                <br>
             <li><b>Conditionals:</b>The testing mechanism where you want to check if variables or values equate, or meet certain criteria. 
-                <br>Written as: 
-                <br><img src="/img/js-conditional.png"></li>
-                <br>
-            <li><b>Arrays:</b>Used for handling multiple values. 
-                <br>Written as:
-                <br><img src="/img/js-array.png"></li>
-                The inside [x] is a representaion of its position in the array. Arrays start counting at 0.
-                <br>
-                <br>
-            <li><b>Loops:</b>Used for repeating an incrementing value until a certain criteria is met.
-                <br>Written as:
-                <br><img src="/img/js-loop.png"></li>
-                <br>
-            <li><b>Objects:</b>Adding an extra dimension to values by giving them properties.
-                 
-                <br> Written as key/value pairs. Like this: 
-                <br><img src="/img/js-object.png"></li>
-                An example would be: a key would be colour, and its value would be "blue"
+                <p>Written as:
+                    <br><img src="/img/js-conditional.png">
+                </p> 
+            </li>
+            <li><b>Arrays:</b>Used for handling multiple stored values.
+                <p>Written as:
+                    <br><img src="/img/js-array.png">
+                    <p>
+                        The item order inside an array is represented by an inside [x] which is its position in the array. Arrays start counting at 0.
+                        <br>The [ ] part of all this, is what they call bracket notation. This is how Javascript stores multiple values, and you can access any item within the array by using the item  array number and assign it as a variable.
+                        <br>For example, say we wanted to access the fourth item - we would type something like this: <code>var item = arrayName[3]</code>. That would give us value4.
+                        <br>A good everyday example would be: picking a shirt from the wardrobe.
+                    </p> 
+                </p>
+            </li>
+            <p><b>Data Control Flows</b></p> 
+            <li><b>Loops:</b>Used in JavaScript to perform repeated tasks based on a condition. A loop will continue running until the defined condition returns false.
+                <p>
+                    Written as:
+                    <br>for (initialization; condition; finalExpression)
+                    <br><img src="/img/js-loop.png">
+                    <br>A good everyday example of a loop would be: using a peeler to peel a potato until it was peeled.
+                </p> 
+            </li>
+                
+            <li><b>Objects:</b>An object is a variable with a collection of properties, and a property is an association between a name (or key) and a value.
+                <p>
+                    JavaScript stores the information about the object inside the { }.
+                    <br>Written as key/value pairs. Like this: 
+                    <br><img src="/img/js-object.png"></li>
+                    An example of an object would be: Having a shirt that has a size, a colour and a price. A key would be colour, and its value would be "blue". 
+                    <br><b>How would you access certain properties of the object?</b> 
+                    <br>By using what they call dot notation (objectName.propertyName). For example - if we wanted to access the properties of key2 to get the value, we would assign a variable that refences that.
+                    <br>(<code>let result = objectName.key2</code>)  and that would return the value of key2.
+                </p>
         </ul>
         <br>
         <br><h5>The DOM</h5>
         When they mention The DOM, it refers to the <b>D</b>ocument <b>O</b>bject <b>M</b>odel.
-        <br>This how Javascript interacts with your web page.
-        <br>
-        <br><b>Document:</b> refers to Javascript handling the Web page as an HTML document.
-        <br><b>Object:</b> Javascript handles the HTML tags as objects and how the document heirarchy is structured like a 'tree'.
-        (See my HTML page) With each nested element, Javascript treats as a child object or branches within that parent object.
-        <br><b>Model:</b> This is displayed as a representation of that JavaScript object. This includes:
-        <ul>
-            <li>The interfaces and objects used to represent and manipulate a document</li>
-            <li>The semantics of these interfaces and objects - including both behavior and attributes</li>
-            <li>The relationships and collaborations among these interfaces and objects</li>
-        </ul> 
-        <br><img src="/img/html-dom.png">
-        
-        <br>
-        <br><h6>Interactivity</h6>
+        <p>
+            This how Javascript interacts with your web page.
+            <br><b>Document:</b> refers to Javascript handling the Web page as an HTML document.
+            <br><b>Object:</b> Javascript handles the HTML tags as objects and how the document heirarchy is structured like a 'tree'.
+            (See my page on HTML). With each nested element, Javascript treats as a child object or branches within that parent object.
+            <br><b>Model:</b> This is displayed as a representation of that JavaScript object. This includes:
+        </p> 
+     
+        <p>
+            <ul>
+                <li>The interfaces and objects used to represent and manipulate a document</li>
+                <li>The semantics of these interfaces and objects - including both behavior and attributes</li>
+                <li>The relationships and collaborations among these interfaces and objects</li>
+            </ul> 
+            <br><img src="/img/html-dom.png">
+        </p>
+        <h6>Interactivity</h6>
         This where the DOM starts to show it's usefulness.
-        <br>
-        <br>For example: you can have elements assigned with a call (references to) to a function residing in a JavaScript file.
-        <br>Like this:
-        <br><img src="/img/js-button.png">
-        <br>The <b>onClick</b> is a event handler which listens for a mouse click - when clicked, calls the function <b>clickMe()</b>
-        <br><img src="/img/js-buttonFunction.png">
-        <br>Event handlers also include: onChange, onMouseover, onMouseout, onKeydown, onLoad
-        <br>
-        <br><h6>Showing results:</h6>
-        To take it up a notch, we can display the results of this interactivity as content on the page.
-        <br>For example - say we have:
-        <ul>
-            <li>A button with an id of "increment-btn" </li>
-            <li>A button with an id of "save-btn"</li>
-            <li>An H2 tag where the increment result is displayed</li>
-            <li>And the paragraph tag where the saved counts are displayed</li>
-        </ul>
-        <img src="/img/js-function-btn.png">
+        <p>
+            For example: you can have elements assigned with a call (references to) to a function residing in a JavaScript file.
+            <br>Like this:
+            <br><img src="/img/js-button.png">
+        </p>
+        <p>
+            The <b>onClick</b> is a event handler which listens for a mouse click - when clicked, calls the function <b>clickMe()</b>
+            <br><img src="/img/js-buttonFunction.png">
+            <br>Event handlers also include: onChange, onMouseover, onMouseout, onKeydown, onLoad
+        </p>
+        <h6>Showing results:</h6>
+        <p>
+            To take it up a notch, we can display the results of this interactivity as content on the page.
+            <br>For example - say we have:
+            <ul>
+                <li>A button with an id of "increment-btn" </li>
+                <li>A button with an id of "save-btn"</li>
+                <li>An H2 tag where the increment result is displayed</li>
+                <li>And the paragraph tag where the saved counts are displayed</li>
+            </ul>
+            <img src="/img/js-function-btn.png">
         <br><img src="/img/js-function-tag.png">
-        <br>
-        <br>Then in the Javascript, it all comes together.
-        <br><img src="/img/js-function-js.png">
-        <br>What this does is, every time the increment button is clicked, the script tells the increment function to increase the count by one.
-        <ul>
-            <li>It assigns a <b>count</b> variable and sets it to zero</li>
-            <li>It then assigns a variable <b>countEL.</b> which references the HTML <b>document</b>, 
-               <br>runs the method that targets the tag within the document by id (<b>.getElementById</b>) - yep, the H2  tag with the id of <b>("count-el")</b> is what is being targeted.</li>
-            <li>Then in the increment function, it increases the count by one (<b>count +=1</b>), then spits out the result 
-                <br> (the <b>.innerText</b> part is where javascript puts the code into HTML ) back into the H2 tag with the new variable <b>count</b>.
-            </li>
-            <li>The save button does something similar: it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)</li>
-            <li>Then in the save function, with the variable <b>countStr</b> that saves the current total of the variable <b>count</b>, adds the " - ",
-               <br>Then inputs the (<b>countStr</b>) variable into <b>.textContent</b> (the paragraph tag) 
-            </li>
-            <li>It then resets the program, and the <b>count</b> variable back to zero, while still retaining the saved count total.</li>
-        </ul> 
-
-        <br>So, with a bit of CSS styling, hopefully your page will look something like this:
-        <br><img src="/img/js-app.png">
-        <br>Boy, I hope this makes sense... 
-        <br>You can also manipulate other elements and their properites, like: by class, by element type, by tag name, by URL, links, event listeners, forms, active links, whether a button is clicked etc...wow.
-        <br>
-        <br>
-        <br>
+        </p>
+        <p>
+            Then in the Javascript, it all comes together.
+            <br><img src="/img/js-function-js.png">
+        </p>
+        <p>
+            What this does is, every time the increment button is clicked, the script tells the increment function to increase the count by one.
+            <ul>
+                <li>
+                    It assigns a <b>count</b> variable and sets it to zero
+                </li>
+                <li>
+                    It then assigns a variable <b>countEL.</b> which references the HTML <b>document</b>, 
+                    runs the method that targets the tag within the document by id (<b>.getElementById</b>) - yep, the H2  tag with the id of <b>("count-el")</b> is what is being targeted.
+                </li>
+                <li>
+                    Then in the increment function, it increases the count by one (<b>count +=1</b>), then spits out the result 
+                    <br> (the <b>.innerText</b> part is where javascript puts the code into HTML ) back into the H2 tag with the new variable <b>count</b>.
+                </li>
+                <li>
+                    The save button does something similar: it assigns a variable <b>saveEL</b> which the method that targets the <b>("save-el")</b> id, (the paragraph tag)
+                </li>
+                <li>
+                    Then in the save function, with the variable <b>countStr</b> that saves the current total of the variable <b>count</b>, adds the " - ",
+                    <br>Then inputs the (<b>countStr</b>) variable into <b>.textContent</b> (the paragraph tag) 
+                </li>
+                <li>
+                    It then resets the program, and the <b>count</b> variable back to zero, while still retaining the saved count total.
+                </li>
+            </ul>
+        </p>
+        <p>
+            So, with a bit of CSS styling, hopefully your page will look something like this:
+            <br><img src="/img/js-app.png">
+            <br>Boy, I hope this makes sense... 
+            <br>You can also manipulate other elements and their properites, like: by class, by element type, by tag name, by URL, links, event listeners, forms, active links, whether a button is clicked etc...wow.
+        </p>
     </div>
-
+    <br>
+    <br>
+    <br>
 </body>
