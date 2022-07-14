@@ -41,6 +41,13 @@ $(function () {
 });
 
 $(function () {  
+    $("#ps").click(function () {  
+        $("#main").load("/blog/problem-solving.html");  
+    });  
+});
+
+
+$(function () {  
     $("#ghub").click(function () {  
         $("#main").load("/blog/git-github.html");  
     });  
