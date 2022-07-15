@@ -89,6 +89,13 @@ $(function () {
     });  
 });
 
+$(function () {  
+    $("#s5").click(function () {  
+        $("#main").load("/blog/sprint-5.html");  
+    });  
+});
+
+
 /* These selectors are waiting for a click instruction (function) from an href with its unique id (#).
 When the  href is clicked, it gets the page 'page.html' and loads it into a div with the id of 'main' */
 
