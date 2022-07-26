@@ -46,6 +46,12 @@ $(function () {
     });  
 });
 
+$(function () {  
+    $("#fr").click(function () {  
+        $("#main").load("/blog/foundations-reflection.html");  
+    });  
+});
+
 
 $(function () {  
     $("#ghub").click(function () {  
